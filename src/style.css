@@ -1,0 +1,36 @@
+@import "hamburger-menu.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden; 
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease; 
+}
+
+.slide {
+    flex: 0 0 100%; 
+}
+
+img {
+    width: 100%;
+    height: auto; 
+}
+
+/* Penyesuaian untuk hamburger menu */
+
+.bar {
+    width: 100%;
+    height: 2px; 
+    background-color: white; 
+    border-radius: 3px; 
+}
