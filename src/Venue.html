@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venue</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <!-- To create the hamburger icon when the screen size is small -->
+      <!-- To connect the hamburger button to div with the class of navbar-nav : using data-target , it is the ID of something that we want to expand/collapse -->
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#expandme"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="expandme">
+        <div class="navbar-nav">
+          <a href="#Home" class="nav-item nav-link">Home</a>
+          <a href="#Home" class="nav-item nav-link">Venue</a>
+          <a href="#Home" class="nav-item nav-link">Venue Details</a>
+        </div>
+        <form class="form-inline ml-auto">
+          <button class="register-btn btn-success" type="submit">
+            Register
+          </button>
+          <button class="login-btn btn-primary" type="submit">Login</button>
+        </form>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="row title-container">
+            <h2 class="col-12 subtitle">Referensi Venue</h2>
+            <div class="container">
+              <p class="col-12 subtitle-desc">
+                Berikut daftar referensi Venue yang sudah memenuhi standar
+                kualitas terbaik untuk memanjakan pengalamanmu bermain.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container content">
+          <div class="row">
+            <h3>
+              Rekomendasi Venue <span style="color: red">Sepak Bola</span>
+            </h3>
+            <div class="images">
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset/first.jpg" alt="" />
+                    <figcaption><h5>Asatu Arena Cikini</h5></figcaption>
+                    <figcaption>
+                      Jakarta Pusat = <span style="color: red">1 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 1,300,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset/second.jpg" alt="" />
+                    <figcaption><h5>Revo Mini Soccer</h5></figcaption>
+                    <figcaption>
+                      Jakarta Timur = <span style="color: red">1 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 900,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset/third.jpg" alt="" />
+                    <figcaption><h5>ALA.PANG.AN Permata Hijau</h5></figcaption>
+                    <figcaption>
+                      Jakarta Selatan =
+                      <span style="color: red">1 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 1,050,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset/fourth.jpg" alt="" />
+                    <figcaption>
+                      <h5>British School Jakarta Football</h5>
+                    </figcaption>
+                    <figcaption>
+                      Tangerang Selatan =
+                      <span style="color: red">2 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 3,000,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset/fifth.jpg" alt="" />
+                    <figcaption>
+                      <h5>ATG Sentul</h5>
+                    </figcaption>
+                    <figcaption>
+                      Bogor =
+                      <span style="color: red">2 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 1,540,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset/sixth.jpg" alt="" />
+                    <figcaption>
+                      <h5>B23 Arena Simprug</h5>
+                    </figcaption>
+                    <figcaption>
+                      Jakarta Selatan =
+                      <span style="color: red">1 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 450,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset/seventh.jpg" alt="" />
+                    <figcaption>
+                      <h5>POP Mini Soccer Jakarta</h5>
+                    </figcaption>
+                    <figcaption>
+                      Jakarta Timur =
+                      <span style="color: red">2 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 500,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset/eighth.jpg" alt="" />
+                    <figcaption>
+                      <h5>Maiin Gandaria</h5>
+                    </figcaption>
+                    <figcaption>
+                      Jakarta Selatan =
+                      <span style="color: red">2 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 325,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container content">
+          <div class="row">
+            <h3>Rekomendasi Venue <span style="color: red">Futsal</span></h3>
+            <div class="images">
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset//Futsal/first.jpg" alt="" />
+                    <figcaption><h5>Inspire Arena Sulut</h5></figcaption>
+                    <figcaption>
+                      Manado = <span style="color: red">4 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 125,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset//Futsal/second.jpg" alt="" />
+                    <figcaption><h5>Arena 21 Pulomas</h5></figcaption>
+                    <figcaption>
+                      Jakarta Timur = <span style="color: red">2 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 300,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="thumbnail">
+                <a href="">
+                  <figure>
+                    <img src="asset//Futsal/third.jpg" alt="" />
+                    <figcaption><h5>CKM Sports Center</h5></figcaption>
+                    <figcaption>
+                      Karawang =
+                      <span style="color: red">1 Lapangan</span>
+                    </figcaption>
+                    <figcaption>
+                      Harga mulai
+                      <span style="color: rgb(4, 145, 4)">Rp 1,050,000</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
