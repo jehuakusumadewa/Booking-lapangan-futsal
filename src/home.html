@@ -3,23 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="output.css">
+        <link href="/src/output.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="/src/style.css">
-        <title>Document</title>
+        <title>Home</title>
     </head>
     <body>
-
-        <header class=" flex justify-between z-10 min-w-36 bg-blue-500 h-20 px-10 mx-11 sticky top-0">  
-            <nav class="w-full px-10 flex items-center justify-between ">
-                <div class="px-11 flex items-center">
+        <header class="bg-secondcolor flex justify-between z-10 min-w-36 h-20 px-10 mx-11 sticky top-0 rounded-full drop-shadow-md">  
+            <nav class="w-full flex items-center justify-between ">
+                <div class="flex items-center">
                     <div class="mt-0 mb-0 flex gap-4">
-                        <a href="#" class="text-black">Home</a>
-                        <a href="#" class="text-black">Venue</a>
-                        <a href="#" class="text-black">Venue Details</a>
-                        <a href="#" class="text-black">About Us</a>
+                        <a href="#" class="text-white">Home</a>
+                        <a href="#" class="text-white">Venue</a>
+                        <a href="#" class="text-white">Venue Details</a>
+                        <a href="#" class="text-white">About Us</a>
                     </div>
                 </div> 
         
@@ -35,89 +31,72 @@
                         <span class="material-symbols-outlined text-white">shopping_cart</span>
                     </a>
                 </div> 
-
-                <div>
-                    <button id="hamburger" class="flex justify-around flex-col w-6 h-6">
-                        <div class="bar w-6 h-0.4 bg-white"></div>
-                        <div class="bar w-6 h-0.4 bg-white"></div>
-                        <div class="bar w-6 h-0.4 bg-white"></div>
-                    </button>
-                </div>
             </nav>
         </header>
 
-        <div class="mx-16">
-            <div class="hero">
-                <div class="slider">
-                    <div class="slide"><img src="/src/asset/item1.png" alt="Banner 1"></div>
-                    <div class="slide"><img src="/src/asset/item2.png" alt="Banner 2"></div>
-                    <!-- Tambahkan slide lainnya sesuai kebutuhan -->
-                </div>
-            <!-- Tombol prev -->
-                <button class="prev" onclick="prevSlide()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="none" d="M0 0h24v24H0V0z"/>
-                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-                    </svg>
-                </button>
-                <!-- Tombol next -->
-                <button class="next" onclick="nextSlide()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="none" d="M0 0h24v24H0V0z"/>
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-                    </svg>
-                </button>
-            </div>
+        
+        <div class="ml-16 mt-6 text-7xl">
+            <h1 class="text-outline">VENUE FUTSAL DENGAN</h1>
+        </div>
+        <div class="ml-28 text-5xl">
+            <h1 class="font-extrabold text-secondcolor">FASISLITAS TERBAIK</h1>
+        </div>
+        
+        <div class="mx-16 flex items-center justify-center">
+            <div class="slide"><img src="/src/asset/item1.png" alt="Banner 1" class="w-min drop-shadow-md"></div>
         </div>
 
         
 
-
-
-        <div>
-            <form class="max-w-sm mx-auto">
-                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
-                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-                </select>
-            </form>
-
-            <form class="max-w-sm mx-auto">
-                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
-                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-                </select>
-            </form>
-
-
-            <div class="relative max-w-sm">
-                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                  </svg>
-                </div>
-                <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
+        <section class="bg-threecolor my-10 py-5">
+            <div class="flex items-center justify-center mx-16 mt-16 text-7xl">
+                <h1 class="text-outline">VENUE FUTSAL DENGAN</h1>
             </div>
+            <div class="flex items-end justify-center my-10 gap-20 mx-10">
+                <form class="w-52">
+                    <label for="aktivitas" class="block mb-2 text-base font-medium text-black dark:text-white">Pilih Aktivitas</label>
+                    <select id="aktivitas" class="pr-20 bg-gray-50 border border-secondcolor text-gray-500 text-sm rounded-lg focus:ring-secondcolor focus:border-secondcolor block w-full p-2.5 dark:bg-gray-500 dark:border-gray-500 dark:placeholder-secondcolor dark:text-secondcolor dark:focus:ring-secondcolor dark:focus:border">
+                    <option selected>Sewa Lapangan</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                    </select>
+                </form>
 
-            <!-- <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Choose plan
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg> -->
-        </div>
+                <form class="w-52">
+                    <label for="lokasi" class="text-base block mb-2 font-medium text-black dark:text-secondcolor">Pilih Lokasi</label>
+                    <select id="lokasi" class= "pr-20 bg-gray-50 border border-secondcolor text-gray-500 text-sm rounded-lg focus:ring-secondcolor focus:border-secondcolor block w-full p-2.5 dark:bg-gray-500 dark:border-gray-500 dark:placeholder-secondcolor dark:text-secondcolor dark:focus:ring-secondcolor dark:focus:border">
+                        <option selected>Jakarta Selatan</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </form>
 
-        <!-- Your JavaScript files -->
-        <script src="/hamburger.js"></script>
-        <script src="/slide.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+                <div class="w-52">
+                    <label for="date" class="text-base block mb-2 font-medium text-black dark:text-white">Pilih Tanggal</label>
+                    <div class="relative max-w-sm">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-secondcolor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                            </svg>
+                        </div>
+                        <input datepicker datepicker-buttons datepicker-autoselect-today type="text" class="py-2.5 bg-gray-50 border border-secondcolor text-gray-500 text-sm rounded-lg focus:ring-secondcolor focus:border-secondcolor block w-full ps-10 px-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-secondcolor dark:focus:border-secondcolor" placeholder="Select date">
+                    </div>
+                </div>
+
+                <div class="max-w-full">
+                    <button type="button" class="drop-shadow-md rounded-full text-white bg-secondcolor hover:bg-secondcolor focus:ring-4 focus:outline-none focus:ring-secondcolor font-medium text-sm px-5 py-6 text-center inline-flex items-center dark:bg-text-secondcolor dark:hover:bg-secondcolor dark:focus:ring-secondcolor">
+                        Choose plan
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
         <script src="/node_modules/flowbite/dist/datepicker.js"></script>
     </body>
     </html>
