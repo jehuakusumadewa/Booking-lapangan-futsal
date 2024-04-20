@@ -1,0 +1,7 @@
+List tugas :
+header, footer = 
+login =
+register =
+venue =
+home = 
+detail-lapangan = 
