@@ -1,7 +1,9 @@
 List tugas :
-header, footer = 
-login =
-register =
-venue =
-home = 
-detail-lapangan = 
+header, footer = Muhammad Nashrul Fikri
+login = Aryo Yudo Wicaksono
+register = Muhammad Hauwin Zulfahmi
+venue = Jehua Kusuma Dewa
+home = Miguel Yehezkiel Noya
+detail-lapangan = Robertus Yoga Adi Baskoro
+checkout_review = Muh. Awaluddin
+checkout_payment = Amar Muktasim
