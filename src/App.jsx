@@ -4,6 +4,7 @@ import Login from "./pages/login/Login.jsx";
 import Register from "./pages/register/Register";
 import Venue from "./pages/venue/Venue";
 import Detail_lapangan from "./pages/detail_lapangan/Detail_lapangan";
+import Checkout_Payment from "./pages/checkout_payment/Checkout_Payment.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/venue" element={<Venue />} />
         <Route path="/detail-lapangan" element={<Detail_lapangan />} />
+        <Route path="/checkout-payment" element={<Checkout_Payment />} />
       </Routes>
     </>
   );
