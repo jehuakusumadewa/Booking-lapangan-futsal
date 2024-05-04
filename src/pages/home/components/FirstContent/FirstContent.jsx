@@ -15,15 +15,20 @@ function FirstContent() {
       <div className="flex justify-center items-center" id="container">
         <div className="flex items-center" id="containerContent">
           <section className="flex flex-col  " id="textContent">
-            <div id="buttonContainer" className="flex ">
+            <div id="buttonContainer" className="flex  sm:text-xs lg:text-xl">
               <button
                 id="buttonPage"
                 autoFocus
                 onClick={() => ToggleDipslay(1)}
+                className="w-full"
               >
                 Pemilik Lapangan
               </button>
-              <button id="buttonPage" onClick={() => ToggleDipslay(2)}>
+              <button
+                id="buttonPage"
+                onClick={() => ToggleDipslay(2)}
+                className="w-full"
+              >
                 Penyewa
               </button>
             </div>
@@ -35,7 +40,7 @@ function FirstContent() {
               <PenyewaContent></PenyewaContent>
             )}
 
-            <button className="mt-3">
+            <button className="mt-3 sm:text-sm md:text-base">
               <span className="link">Lihat Selengkapnya ➡️</span>
             </button>
           </section>

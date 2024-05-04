@@ -2,10 +2,10 @@ function KompetisiContent({ onclick }) {
   return (
     <>
       <div>
-        <h2 className="text-3xl flex justify-center">
+        <h2 className="sm:text-xl md:text-2xl lg:text-3xl flex px-10 justify-center font-medium">
           Kelola kompetisi tanpa ribet dan hemat budget sekarang juga!
         </h2>
-        <p id="textDesc">
+        <p id="textDesc" className="px-10">
           Tanpa perlu tambahan budget untuk SDM dan platform digital, nikmati
           semua kemudahannya lewat tournament management software AYO Indonesia.
           Gratis!
@@ -33,7 +33,7 @@ function KompetisiContent({ onclick }) {
         {/* Gambar */}
         <div className={`w-screen h-1/2  flex justify-center items-center  `}>
           {/* use padding to adjust the height */}
-          <div className="w-3/4 my-5 gap-20 flex  px-5 py-10">
+          <div className="w-3/4 my-5 gap-20 lg:flex sm:block  px-5 py-5">
             <div className="px-5 py-5  text-black">
               <p className="font-bold mb-5" id="textDesc">
                 Mudah di operasikan

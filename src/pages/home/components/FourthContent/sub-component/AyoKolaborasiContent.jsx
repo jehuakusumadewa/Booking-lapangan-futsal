@@ -10,7 +10,7 @@ function AyoKolaborasiContent() {
               <div
               // ref={inputRef1}
               >
-                <p className="font-bold text-red-700 text-md">AYO KOLABORASI</p>
+                <p className="font-bold text-red-700 text-lg">AYO KOLABORASI</p>
                 <h2 className="text-3xl  justify-start">
                   Kenapa AYO Indonesia
                 </h2>

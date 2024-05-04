@@ -29,7 +29,7 @@ function FourthPageComponent() {
       <div className="flex justify-center items-center w-full h-full">
         {renderPage()}
       </div>
-      <div className="w-full flex justify-center h-64 my-20">
+      <div className="sm:size-6/12 w-full flex justify-center m-auto mt-10 mb-20">
         <img
           src="https://cdn.asicentral.com/MKTGemails/346-13195/assets/img/hero.jpg"
           alt=""

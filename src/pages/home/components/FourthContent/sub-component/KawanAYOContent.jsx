@@ -8,18 +8,18 @@ function KawanAYOContent() {
     setShowResults(pageNumber);
   };
   return (
-    <div className="flex justify-center w-screen  ">
-      <div className="flex justify-center  w-[85%] ">
+    <div className="flex 2xl justify-center w-screen ">
+      <div className="flex sm:flex-col 2xl:flex-row justify-center bg-slate-600  w-[85%] ">
         {/* Image Content */}
         <section
-          className={`${styles.backgroundComment} w-1/2 flex justify-center items-center text-4xl bg-red-200 rounded-[20px] text-white`}
+          className={`${styles.backgroundComment} 2xl:w-1/2 sm:my-10 flex justify-center items-center text-4xl bg-red-200 rounded-[20px] text-white`}
         >
           <div className=" p-20 w-3/4 flex justify-center">
             <h2>Apa kata kawan AYO </h2>
           </div>
         </section>
         {showResults === 1 ? (
-          <section className="flex flex-col justify-center items-center  w-1/2 ">
+          <section className="flex flex-col justify-center items-center sm:w-full  2xl:w-1/2 ">
             <div className="bg-gray-200 rounded-[20px] px-20 py-4 w-3/4 flex flex-col items-center space-y-3 justify-center">
               <p className="font-bold flex w-full justify-start">Opi Hovidin</p>
               <p className="font-medium flex w-full justify-start">
@@ -42,7 +42,7 @@ function KawanAYOContent() {
             </div>
           </section>
         ) : (
-          <section className="flex flex-col justify-center items-center  w-1/2 ">
+          <section className="flex flex-col justify-center items-center  sm:w-full  2xl:w-1/2 ">
             <div className="bg-gray-200 rounded-[20px] px-20 py-4 w-3/4 flex flex-col items-center space-y-3 justify-center">
               <p className="font-bold flex w-full justify-start">Dita Sujana</p>
               <p className="font-medium flex w-full justify-start">
