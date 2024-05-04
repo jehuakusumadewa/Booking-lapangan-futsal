@@ -23,8 +23,8 @@ const Venue = () => {
         <input type="text" value={filter} onChange={serachText.bind(this)} />
       </div>
 
-      <div className="lapangan">
-        <div className=" bg-gray-100 flex items-stretch justify-center space-x-4">
+      <div className="lapangan flex justify-center space-y-5">
+        <div className=" bg-gray-100 grid grid-rows-4 grid-cols-3 gap-4">
           {dataSearch.map((lapangan) => (
             <Items data={lapangan} />
           ))}
