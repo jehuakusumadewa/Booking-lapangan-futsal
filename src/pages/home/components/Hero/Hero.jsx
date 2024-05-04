@@ -1,13 +1,7 @@
 function HeroComponent() {
   return (
     <>
-      <div className="homePage relative">
-        <img
-          src="https://asset.gecdesigns.com/img/wallpapers/beautiful-fantasy-wallpaper-ultra-hd-wallpaper-4k-sr10012418-1706506236698-cover.webp"
-          alt="wallpaperhomepage"
-          className="w-full  object-cover imgWallpaper"
-        />
-
+      <div className="homePage relative imgWallpaper">
         {/* Home Page Title and Description */}
         <div className="flex flex-col w-3/4 h-3/4 absolute justify-center items-start top-0 left-40  ">
           <h1 className=" flex justify-center text-8xl text-white font-bold">

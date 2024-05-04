@@ -18,6 +18,11 @@ nav {
 
 .imgWallpaper {
   height: 99vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.068), rgba(0, 0, 0, 0)),
+    url("https://muralsyourway.vtexassets.com/arquivos/ids/231357/Soccer-Stadium-Mural-Wallpaper.jpg?v=638164878343570000");
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Second and Third Page */
