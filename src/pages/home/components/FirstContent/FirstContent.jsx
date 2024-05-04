@@ -1,7 +1,5 @@
 import React, { useState, useRef, useContext } from "react";
 
-import profilePic from "../../../../assets/Stadium.jpg";
-
 import PemilikLapanganContent from "./sub-components/PemilikLapanganContent";
 import PenyewaContent from "./sub-components/PenyewaContent";
 
@@ -44,7 +42,7 @@ function FirstContent() {
           <section id="imageContent">
             <img
               className="w-full h-full px-5 py-5"
-              src={profilePic}
+              src="https://plus.unsplash.com/premium_photo-1664304724418-348799c3d5c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGxheWluZyUyMHNvY2NlcnxlbnwwfHwwfHx8MA%3D%3D"
               alt="stadium"
             />
           </section>

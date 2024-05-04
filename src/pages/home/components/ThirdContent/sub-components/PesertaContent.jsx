@@ -1,4 +1,3 @@
-import profilePic from "../../../../../assets/Stadium.jpg";
 // add onclick paramters
 function PesertaContent({ onclick }) {
   return (
@@ -37,9 +36,21 @@ function PesertaContent({ onclick }) {
           className="sm:block  lg:flex lg:w-full justify-center my-10 h-3/4 "
           id="imageList"
         >
-          <img className="mx-8" src={profilePic} alt="" />
-          <img className="mx-8" src={profilePic} alt="" />
-          <img className="mx-8" src={profilePic} alt="" />
+          <img
+            className="mx-8"
+            src="https://images.unsplash.com/photo-1529929344488-5e812ddb6e2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHNvY2NlciUyMHRlYW1tYXRlfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <img
+            className="mx-8"
+            src="https://plus.unsplash.com/premium_photo-1685055940272-62cce291d7d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNvY2NlciUyMHRlYW1tYXRlfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <img
+            className="mx-8"
+            src="https://images.unsplash.com/photo-1521579971123-1192931a1452?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHNvY2NlciUyMHRlYW1tYXRlfGVufDB8fDB8fHww"
+            alt=""
+          />
         </div>
 
         <button className="mt-3 flex w-full justify-center">

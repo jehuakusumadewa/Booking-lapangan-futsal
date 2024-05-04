@@ -1,7 +1,5 @@
 import React, { useState, useRef, useContext } from "react";
 
-import profilePic from "../../../../assets/Stadium.jpg";
-
 import SparringContent from "./sub-components/SparringContent";
 import MabarContent from "./sub-components/MabarContent";
 
@@ -48,7 +46,7 @@ function SecondContent() {
           <section id="imageContent">
             <img
               className="w-full h-full px-5 py-5"
-              src={profilePic}
+              src="https://images.unsplash.com/photo-1528287851237-12b0b5eafbff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxheWluZyUyMHNvY2NlciUyMHJlZHxlbnwwfHwwfHx8MA%3D%3D"
               alt="stadium"
             />
           </section>
