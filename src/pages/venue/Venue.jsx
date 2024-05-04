@@ -3,7 +3,7 @@ import { LAPANGAN } from "./Venueitem";
 import { Items } from "./Items";
 import Layout from "../../layouts/Layout";
 const Venue = () => {
-  const [filter, setFilter] = useState(" ");
+  const [filter, setFilter] = useState("");
 
   const serachText = (event) => {
     setFilter(event.target.value);
