@@ -17,7 +17,7 @@ const Header = () => {
     },
     {
       name: "Register",
-      path: "/login",
+      path: "/register",
     },
   ];
 
