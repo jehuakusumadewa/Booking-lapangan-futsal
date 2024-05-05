@@ -9,7 +9,7 @@ function KawanAYOContent() {
   };
   return (
     <div className="flex 2xl justify-center w-screen ">
-      <div className="flex sm:flex-col 2xl:flex-row justify-center bg-slate-600  w-[85%] ">
+      <div className="flex sm:flex-col 2xl:flex-row justify-center  w-[85%] ">
         {/* Image Content */}
         <section
           className={`${styles.backgroundComment} 2xl:w-1/2 sm:my-10 flex justify-center items-center text-4xl bg-red-200 rounded-[20px] text-white`}
