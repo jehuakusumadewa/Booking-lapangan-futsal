@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 export const Items = (props) => {
+  const navigate = useNavigate()
   const { id, lapanganName, lokasi, lapanganImage } = props.data;
+
   return (
     <>
-      <div className="card">
+      <div className="card" onClick={() => navigate("/booking")}>
         <img
           className=" object-cover w-full h-[10rem]"
           src={lapanganImage}
