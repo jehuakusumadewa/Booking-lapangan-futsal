@@ -15,10 +15,10 @@ const Register = () => {
   const [password, setPassword] = useState(''); // State untuk menyimpan nomor telepon
   const [level, setLevel] = useState(''); // State untuk menyimpan password
 
-  useEffect(async () => {
-    const getData = await axios.get('http://localhost:3000/lapangan/data');
-    console.log(getData.data, 'get data');
-  }, []);
+  // useEffect(async () => {
+  //   const getData = await axios.get('http://localhost:3000/lapangan/data');
+  //   console.log(getData.data, 'get data');
+  // }, []);
 
   // Fungsi untuk menangani pengiriman formulir registrasi
   const handleRegist = async (e) => {
@@ -32,7 +32,7 @@ const Register = () => {
     });
 
 
-    console.log(nama, username, password, level, response, 'response')
+    // console.log(nama, username, password, level, response, 'response')
 
   }
 

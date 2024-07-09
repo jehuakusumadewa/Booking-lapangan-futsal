@@ -7,19 +7,19 @@ import Layout from "../../layouts/Layout"
 import { LAPANGAN } from "../venue/Venueitem";
 
 const Booking = () => {
-    const navigate                          = useNavigate()
-    const [valueDate, onChangeDate]         = useState(new Date());
-    const [activeDate, setActiveDate]       = useState("")
+    const navigate = useNavigate()
+    const [valueDate, onChangeDate] = useState(new Date());
+    const [activeDate, setActiveDate] = useState("")
     const [activeBooking, setActiveBooking] = useState("")
-    const [showBooking, setShowBooking]     = useState({ id:"", status:false })
-    const [listDate, setListDate]           = useState([])
+    const [showBooking, setShowBooking] = useState({ id: "", status: false })
+    const [listDate, setListDate] = useState([])
     const [showFilterTime, setShowFilterTime] = useState(false)
     const [showFilterDate, setShowFilterDate] = useState(false)
     const [activeFilterTime, setActiveFilterTime] = useState("")
 
     const getOneWeekDate = () => {
         let date = []
-        for(let i=0; i<7; i++) {
+        for (let i = 0; i < 7; i++) {
             date.push(moment().add(i, 'days').toLocaleString())
         }
 
@@ -29,23 +29,23 @@ const Booking = () => {
 
     const handleActiveShowBooking = (value) => {
         setShowBooking({
-            id : value.id,
-            status : value.status
+            id: value.id,
+            status: value.status
         })
 
         setActiveBooking("")
     }
 
     const handleShowFilterTime = (value) => {
-        if(value) {
+        if (value) {
             setShowFilterDate(false)
         }
-        
+
         setShowFilterTime(value)
     }
 
     const handleShowFilterDate = (value) => {
-        if(value) {
+        if (value) {
             setShowFilterTime(false)
         }
 
@@ -175,28 +175,28 @@ const Booking = () => {
                             return (
                                 <div className="flex items-start my-3" key={i}>
                                     <div className="flex w-4/12">
-                                        <img src={e.lapanganImage} alt="lapangan"/>
+                                        <img src={e.lapanganImage} alt="lapangan" />
                                     </div>
                                     <div className="flex w-8/12 px-3 flex-col">
                                         <div className="flex">
                                             <span className="font-medium text-lg">{e.lapanganName}</span>
                                         </div>
                                         <div className="flex items-center">
-                                            <Icon icon="mdi:location" className="text-gray-500"/>
+                                            <Icon icon="mdi:location" className="text-gray-500" />
                                             <span className="text-md text-gray-500">{e.lokasi}</span>
                                         </div>
                                         <div className="flex items-center mt-3">
-                                            <button className="px-4 h-[40px] bg-red-700 rounded-lg" onClick={() => handleActiveShowBooking({ id:e.id, status: showBooking.id !== e.id ? true : showBooking.status ? false : true })}>
+                                            <button className="px-4 h-[40px] bg-red-700 rounded-lg" onClick={() => handleActiveShowBooking({ id: e.id, status: showBooking.id !== e.id ? true : showBooking.status ? false : true })}>
                                                 <div className="flex items-center">
                                                     <span className="text-white text-sm">
                                                         Jadwal tersedia
                                                     </span>
                                                     {
                                                         showBooking.id === e.id &&
-                                                        showBooking.status ?
-                                                            <Icon icon="hugeicons:circle-arrow-up-01" className="ml-2 text-white"/>
-                                                        :
-                                                            <Icon icon="hugeicons:circle-arrow-down-01" className="ml-2 text-white"/>
+                                                            showBooking.status ?
+                                                            <Icon icon="hugeicons:circle-arrow-up-01" className="ml-2 text-white" />
+                                                            :
+                                                            <Icon icon="hugeicons:circle-arrow-down-01" className="ml-2 text-white" />
                                                     }
                                                 </div>
                                             </button>
@@ -207,39 +207,39 @@ const Booking = () => {
                                             showBooking.status &&
                                             <div className="flex flex-col">
                                                 <div className="flex border-t border-t-gray-300 mt-3 py-3 overflow-auto">
-                                                    <div onClick={() => setActiveBooking(e.id+"_list_1")} className={`flex cursor-pointer select-none min-w-[200px] border border-gray-300 rounded-lg flex-col px-5 py-2 justify-center mr-3 ${activeBooking === e.id+"_list_1" ? "bg-red-500/10 border border-red-600" : ""}`}>
+                                                    <div onClick={() => setActiveBooking(e.id + "_list_1")} className={`flex cursor-pointer select-none min-w-[200px] border border-gray-300 rounded-lg flex-col px-5 py-2 justify-center mr-3 ${activeBooking === e.id + "_list_1" ? "bg-red-500/10 border border-red-600" : ""}`}>
                                                         <div className="flex w-full justify-center">
-                                                            <span className={`${activeBooking === e.id+"_list_1" ? "text-red-400" : "text-gray-400"} text-sm`}>60 menit</span>
+                                                            <span className={`${activeBooking === e.id + "_list_1" ? "text-red-400" : "text-gray-400"} text-sm`}>60 menit</span>
                                                         </div>
                                                         <div className="flex w-full justify-center my-1">
-                                                            <span className={`${activeBooking === e.id+"_list_1" ? "text-red-600" : "text-black"} text-md font-medium`}>18:00 - 19:00</span>
+                                                            <span className={`${activeBooking === e.id + "_list_1" ? "text-red-600" : "text-black"} text-md font-medium`}>18:00 - 19:00</span>
                                                         </div>
                                                         <div className="flex w-full justify-center">
-                                                            <span className={`${activeBooking === e.id+"_list_1" ? "text-red-600" : "text-black"} text-sm font-medium`}>Rp 200.000</span>
+                                                            <span className={`${activeBooking === e.id + "_list_1" ? "text-red-600" : "text-black"} text-sm font-medium`}>Rp 200.000</span>
                                                         </div>
                                                     </div>
 
-                                                    <div onClick={() => setActiveBooking(e.id+"_list_2")} className={`flex cursor-pointer select-none min-w-[200px] border border-gray-300 rounded-lg flex-col px-5 py-2 justify-center mr-3 ${activeBooking === e.id+"_list_2" ? "bg-red-500/10 border border-red-600" : ""}`}>
+                                                    <div onClick={() => setActiveBooking(e.id + "_list_2")} className={`flex cursor-pointer select-none min-w-[200px] border border-gray-300 rounded-lg flex-col px-5 py-2 justify-center mr-3 ${activeBooking === e.id + "_list_2" ? "bg-red-500/10 border border-red-600" : ""}`}>
                                                         <div className="flex w-full justify-center">
-                                                            <span className={`${activeBooking === e.id+"_list_2" ? "text-red-400" : "text-gray-400"} text-sm`}>60 menit</span>
+                                                            <span className={`${activeBooking === e.id + "_list_2" ? "text-red-400" : "text-gray-400"} text-sm`}>60 menit</span>
                                                         </div>
                                                         <div className="flex w-full justify-center my-1">
-                                                            <span className={`${activeBooking === e.id+"_list_2" ? "text-red-600" : "text-black"} text-md font-medium`}>19:00 - 20:00</span>
+                                                            <span className={`${activeBooking === e.id + "_list_2" ? "text-red-600" : "text-black"} text-md font-medium`}>19:00 - 20:00</span>
                                                         </div>
                                                         <div className="flex w-full justify-center">
-                                                            <span className={`${activeBooking === e.id+"_list_2" ? "text-red-600" : "text-black"} text-sm font-medium`}>Rp 200.000</span>
+                                                            <span className={`${activeBooking === e.id + "_list_2" ? "text-red-600" : "text-black"} text-sm font-medium`}>Rp 200.000</span>
                                                         </div>
                                                     </div>
 
-                                                    <div onClick={() => setActiveBooking(e.id+"_list_3")} className={`flex cursor-pointer select-none min-w-[200px] border border-gray-300 rounded-lg flex-col px-5 py-2 justify-center mr-3 ${activeBooking === e.id+"_list_3" ? "bg-red-500/10 border border-red-600" : ""}`}>
+                                                    <div onClick={() => setActiveBooking(e.id + "_list_3")} className={`flex cursor-pointer select-none min-w-[200px] border border-gray-300 rounded-lg flex-col px-5 py-2 justify-center mr-3 ${activeBooking === e.id + "_list_3" ? "bg-red-500/10 border border-red-600" : ""}`}>
                                                         <div className="flex w-full justify-center">
-                                                            <span className={`${activeBooking === e.id+"_list_3" ? "text-red-400" : "text-gray-400"} text-sm`}>60 menit</span>
+                                                            <span className={`${activeBooking === e.id + "_list_3" ? "text-red-400" : "text-gray-400"} text-sm`}>60 menit</span>
                                                         </div>
                                                         <div className="flex w-full justify-center my-1">
-                                                            <span className={`${activeBooking === e.id+"_list_3" ? "text-red-600" : "text-black"} text-md font-medium`}>21:00 - 22:00</span>
+                                                            <span className={`${activeBooking === e.id + "_list_3" ? "text-red-600" : "text-black"} text-md font-medium`}>21:00 - 22:00</span>
                                                         </div>
                                                         <div className="flex w-full justify-center">
-                                                            <span className={`${activeBooking === e.id+"_list_3" ? "text-red-600" : "text-black"} text-sm font-medium`}>Rp 200.000</span>
+                                                            <span className={`${activeBooking === e.id + "_list_3" ? "text-red-600" : "text-black"} text-sm font-medium`}>Rp 200.000</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -249,7 +249,7 @@ const Booking = () => {
                                                     <div className="flex">
                                                         <button className="px-4 h-[40px] bg-red-700 rounded-lg" onClick={() => navigate("/checkout-payment")}>
                                                             <div className="flex items-center">
-                                                                <Icon icon="bi:cart" className="text-white mr-2"/>
+                                                                <Icon icon="bi:cart" className="text-white mr-2" />
                                                                 <span className="text-white text-sm">
                                                                     Order lapangan
                                                                 </span>
